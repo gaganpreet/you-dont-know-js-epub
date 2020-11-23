@@ -6,7 +6,7 @@
 mkdir -p output
 
 ROOT_DIR=$PWD
-FONT_PATH=/usr/share/fonts/ttf-dejavu/DejaVuSansMono.ttf
+FONT_PATH=/usr/share/fonts/TTF/Inconsolata-Regular.ttf
 
 TITLE="You Don't Know JS Yet"
 AUTHOR="Kyle Simpson"
@@ -35,7 +35,6 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK1.epub" \
   --epub-cover-image=images/cover.png \
   --epub-embed-font=$FONT_PATH \
   --css=$ROOT_DIR/epub.css \
-  --no-highlight \
   -M author="$AUTHOR" \
   -M title="$TITLE: $BOOK1" \
   foreword.md \
@@ -54,7 +53,6 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK2.epub" \
   --epub-cover-image=images/cover.png \
   --epub-embed-font=$FONT_PATH \
   --css=$ROOT_DIR/epub.css \
-  --no-highlight \
   -M author="$AUTHOR" \
   -M title="$TITLE: $BOOK2" \
   foreword.md \
@@ -89,7 +87,6 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK3.epub" \
   --epub-cover-image=cover.jpg \
   --epub-embed-font=$FONT_PATH \
   --css=$ROOT_DIR/epub.css \
-  --no-highlight \
   -M author="$AUTHOR" \
   -M title="$TITLE: $BOOK3" \
   foreword.md \
@@ -110,7 +107,6 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK4.epub" \
   --epub-cover-image=cover.jpg \
   --epub-embed-font=$FONT_PATH \
   --css=$ROOT_DIR/epub.css \
-  --no-highlight \
   -M author="$AUTHOR" \
   -M title="$TITLE: $BOOK4" \
   foreword.md \
@@ -130,7 +126,6 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK5.epub" \
   --epub-cover-image=cover.jpg \
   --epub-embed-font=$FONT_PATH \
   --css=$ROOT_DIR/epub.css \
-  --no-highlight \
   -M author="$AUTHOR" \
   -M title="$TITLE: $BOOK5" \
   foreword.md \
@@ -152,7 +147,6 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK6.epub" \
   --epub-cover-image=cover.jpg \
   --epub-embed-font=$FONT_PATH \
   --css=$ROOT_DIR/epub.css \
-  --no-highlight \
   -M author="$AUTHOR" \
   -M title="$TITLE: $BOOK6" \
   foreword.md \
